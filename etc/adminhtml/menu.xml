@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Vendor_Module::report_mycustomreport"
+            title="My Custom Report"
+            module="Vendor_Module"
+            sortOrder="30"
+            parent="Magento_Reports::report_salesroot"
+            action="vendor_module/report_sales/mycustomreport"
+            resource="Magento_Reports::salesroot" />
+    </menu>
+</config>

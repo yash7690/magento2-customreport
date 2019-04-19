@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Reports\Model\ResourceModel\Refresh\Collection">
+        <plugin name="vendor_module_report_mycustomreport" type="Vendor\Module\Plugin\Magento\Reports\Model\ResourceModel\Refresh\Collection" sortOrder="1" />
+    </type>
+
+    <type name="Magento\Reports\Controller\Adminhtml\Report\Statistics">
+        <arguments>
+            <argument name="reportTypes" xsi:type="array">
+                <item name="mycustomreport" xsi:type="string">Vendor\Module\Model\ResourceModel\Report\MyCustomReport</item>
+            </argument>
+        </arguments>
+    </type>
+</config>
